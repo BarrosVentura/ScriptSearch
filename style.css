@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700");
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #707070;
+}
+
+body,
+div,
+section,
+header,
+img,
+h1,
+button {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2.56em;
+}
+
+button {
+  border: none;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  margin: 10px;
+  color: #707070;
+  font-size: 1.25em;
+}
+
+button:hover {
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.btn-options {
+  width: 260px;
+  height: 70px;
+}
+
+.btn-pagination {
+  width: 61px;
+  height: 45px;
+}
+
+.btn-clicked {
+  border: 5px solid #5580C1;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.full-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+  .full-search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.full-search .container-side {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 20px 0 0 0;
+}
+
+.full-search .contrast {
+  background: #5580C1;
+  height: 100%;
+}
+
+.full-search .contrast h1 {
+  color: #FFFFFF;
+}
+
+.full-search .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.full-search .selected-items {
+  color: #FFFFFF;
+}
+
+.full-search .selected-items .chosen-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.full-search .selected-items .chosen-options div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background: #FFF;
+  margin: 10px;
+  color: #707070;
+  padding: 5px 0;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+/*# sourceMappingURL=style.css.map */

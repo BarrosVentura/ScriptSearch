@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700');
+$contrastColor: #5580C1;
+$fontColor: #707070;
+$contrastFontColor: #FFFFFF;
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $fontColor;
+}
+
+body,
+div,
+section,
+header,
+img,
+h1,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 2.56em;
+}
+
+button {
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  background-color: #FFF;
+  margin: 10px;
+  color: $fontColor;
+  font-size: 1.25em;
+
+  &:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+  }
+}
+
+.btn-options {
+  width: 260px;
+  height: 70px;
+}
+
+.btn-pagination {
+  width: 61px;
+  height: 45px;
+}
+
+.btn-clicked {
+  border: 5px solid $contrastColor;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.full-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+
+  @media only screen and (max-width: 980px) {
+    flex-direction: column;
+  }
+
+  .container-side {
+    text-align: center;
+    flex: 1;
+    padding: 20px 0 0 0;
+  }
+
+  .contrast {
+    background: $contrastColor;
+    height: 100%;
+
+    h1 {
+      color: $contrastFontColor;
+    }
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 0;
+
+  }
+
+  .selected-items {
+    color: $contrastFontColor;
+
+    .chosen-options {
+
+      display: flex;
+      flex-wrap: wrap;
+      
+
+      div {
+        flex: 1;
+        background: #FFF;
+        margin: 10px;
+        color: $fontColor;
+        padding: 5px 0;
+        border-radius: 1em;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <title>Scriptcase Search</title>
+</head>
+
+<body>
+  <section class="full-search">
+    <div class="container-side search">
+      <div class="">
+        <h1>Select a option to be a part of the search</h1>
+        <div class="btn-group">
+          <button name="button" class="btn-options">Order ID</button>
+          <button name="button" class="btn-options">Customer</button>
+          <button name="button" class="btn-options">Employee ID</button>
+          <button name="button" class="btn-options">Order Date</button>
+          <button name="button" class="btn-options">Price Order</button>
+        </div>
+        <div>
+          <button name="button-pagination-next" class="btn-pagination">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-side search-options">
+      <div class="">
+        <h1>Now choose the search options</h1>
+        <div class="btn-group">
+          <button name="button-search-options" class="btn-options">Greater than</button>
+          <button name="button-search-options" class="btn-options">Less than</button>
+          <button name="button-search-options" class="btn-options">Equal to</button>
+          <button name="button-search-options" class="btn-options">Between two values</button>
+          <button name="button-search-options" class="btn-options">Contains</button>
+          <button name="button-search-options" class="btn-options">Different</button>
+          <button name="button-search-options" class="btn-options">Not Contains</button>
+          <button name="button-search-options" class="btn-options">Greater equal</button>
+          <button name="button-search-options" class="btn-options">Less equal</button>
+        </div>
+        <div>
+          <button name="button-pagination-previous" class="btn-pagination">←</button>
+          <button name="button-all" class="btn-pagination">All</button>
+          <button name="button-none" class="btn-pagination">None</button>
+        </div>
+      </div>
+    </div>
+    <div class="selected-items container-side contrast">
+      <div>
+        <h1>Selected</h1>
+        <div class="chosen-options" >
+          <div>
+            <h3>Customer</h3>
+            <p>Different</p>
+            <p>Greater equal</p>
+            <p>Less than</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
